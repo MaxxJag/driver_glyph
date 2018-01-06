@@ -491,7 +491,6 @@ public:
 			else {
 				*pnX = m_nWindowWidth;
 			}
-			*pnX = 0;
 			*pnY = 0;
 		}
 
