@@ -73,24 +73,24 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
     <TargetName>driver_glyph</TargetName>
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);D:\workspace\openvr-1.0.11\headers</IncludePath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);D:\workspace\openvr\headers</IncludePath>
     <OutDir>C:\Program Files (x86)\Steam\steamapps\common\SteamVR\drivers\glyph\bin\win32\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);D:\workspace\openvr-1.0.11\headers</IncludePath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);D:\workspace\openvr\headers</IncludePath>
     <TargetName>driver_glyph</TargetName>
     <OutDir>C:\Program Files (x86)\Steam\steamapps\common\SteamVR\drivers\glyph\bin\win64\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <TargetName>driver_glyph</TargetName>
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);D:\workspace\openvr-1.0.11\headers</IncludePath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);D:\workspace\openvr\headers</IncludePath>
     <OutDir>C:\Program Files (x86)\Steam\steamapps\common\SteamVR\drivers\glyph\bin\win32\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);D:\workspace\openvr-1.0.11\headers</IncludePath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);D:\workspace\openvr\headers</IncludePath>
     <TargetName>driver_glyph</TargetName>
     <OutDir>C:\Program Files (x86)\Steam\steamapps\common\SteamVR\drivers\glyph\bin\win64\</OutDir>
   </PropertyGroup>

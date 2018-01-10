@@ -359,7 +359,7 @@ public:
 		vr::VRProperties()->SetFloatProperty(m_ulPropertyContainer, Prop_SecondsFromVsyncToPhotons_Float, m_flSecondsFromVsyncToPhotons);
 
 		// return a constant that's not 0 (invalid) or 1 (reserved for Oculus)
-		vr::VRProperties()->SetUint64Property(m_ulPropertyContainer, Prop_CurrentUniverseId_Uint64, 1);
+		vr::VRProperties()->SetUint64Property(m_ulPropertyContainer, Prop_CurrentUniverseId_Uint64, 2);
 
 		// avoid "not fullscreen" warnings from vrmonitor
 		vr::VRProperties()->SetBoolProperty(m_ulPropertyContainer, Prop_IsOnDesktop_Bool, false);
@@ -454,7 +454,7 @@ public:
 
 	virtual bool IsDisplayOnDesktop()
 	{
-		return false;
+		return true;
 	}
 
 	virtual bool IsDisplayRealDisplay()
@@ -487,14 +487,15 @@ public:
 		{
 			if (useSBS) {
 				*pnX = m_nWindowWidth / 2;
+				*pnY = 0;
 			}
 			else {
-				*pnX = m_nWindowWidth;
+				*pnX = 0;
+				*pnY = 0;
 			}
-			*pnY = 0;
 		}
 
-		DriverLog("GetEyeOutput %s (%i, %i, %i, %i\n", eEye == Eye_Left?"Left Eye":"Right Eye", *pnX, *pnY, *pnWidth, *pnHeight);
+		DriverLog("GetEyeOutput %s (%i, %i, %i, %i)\n", eEye == Eye_Left?"Left Eye":"Right Eye", *pnX, *pnY, *pnWidth, *pnHeight);
 	}
 
 	virtual void GetProjectionRaw(EVREye eEye, float *pfLeft, float *pfRight, float *pfTop, float *pfBottom)
